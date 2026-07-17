@@ -266,14 +266,14 @@ p { margin-bottom: 1.25rem; font-size: 1.125rem; color: var(--text); }
   padding-left: 1.5rem;
 }
 .content-main li { margin-bottom: 0.5rem; }
-.content-main a {
+.content-main a:not(.btn) {
   color: var(--accent);
   text-decoration: underline;
   text-decoration-color: transparent;
   text-underline-offset: 4px;
   transition: all 0.2s ease;
 }
-.content-main a:hover {
+.content-main a:not(.btn):hover {
   text-decoration-color: var(--accent);
 }
 
