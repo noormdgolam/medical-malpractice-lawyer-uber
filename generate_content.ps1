@@ -1,4 +1,4 @@
-$GroqKeys = @(
+﻿$GroqKeys = @(
     'gsk_placeholder_1',
     'gsk_placeholder_2',
     'gsk_placeholder_3',
@@ -127,7 +127,7 @@ REQUIREMENTS:
                 
                 $SocialShare = "<div class='social-share'><span>Share: </span><button class='share-btn'>X</button> <button class='share-btn'>Facebook</button> <button class='share-btn'>LinkedIn</button> <button class='share-btn'>Copy Link</button></div>"
                 $AuthorByline = "<div class='author-byline'><p><strong>Author:</strong> Medical Malpractice Editorial Team | <strong>Last Updated:</strong> $(Get-Date -Format 'MM/dd/yyyy')</p></div>"
-                $Sidebar = "<aside class='similar-items'><h3>Similar Items</h3><ul><li><a href='/articles/uber-lyft-medical-malpractice-lawyer.html'>Uber/Lyft Medical Malpractice Lawyer</a></li><li><a href='/articles/average-settlement-for-uber-passenger-medical-malpractice.html'>Average Settlements</a></li><li><a href='/articles/suing-lyft-and-the-hospital-for-wrongful-death.html'>Wrongful Death Claims</a></li></ul></aside>"
+                $Sidebar = "<aside class='similar-items'><h3>Similar Items</h3><ul><li><a href='./uber-lyft-medical-malpractice-lawyer.html'>Uber/Lyft Medical Malpractice Lawyer</a></li><li><a href='./average-settlement-for-uber-passenger-medical-malpractice.html'>Average Settlements</a></li><li><a href='./suing-lyft-and-the-hospital-for-wrongful-death.html'>Wrongful Death Claims</a></li></ul></aside>"
                 
                 $MidAdSense = "<div class='ad-slot mid-article'><ins class='adsbygoogle' style='display:block; text-align:center;' data-ad-layout='in-article' data-ad-format='fluid' data-ad-client='ca-pub-1234567890123456' data-ad-slot='1234567894'></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div>"
 
@@ -179,3 +179,4 @@ REQUIREMENTS:
 }
 
 Write-Host "Batch finished ($Count articles processed)."
+
