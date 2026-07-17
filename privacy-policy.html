@@ -27,6 +27,7 @@
                         </ul>
                     </li>
                     <li><a href="/about.html">About Us</a></li>
+                    <li><a href="javascript:void(0)" onclick="document.getElementById('searchModal').classList.add('active')">Search</a></li>
                     <li><a href="/contact.html">Contact</a></li>
                 </ul>
             </nav>
@@ -58,14 +59,44 @@
                     <li><a href="/disclaimer.html">Disclaimer</a></li>
                 </ul>
             </div>
+                    <div>
+                <h4>Contact Info</h4>
+                <p>Medical Malpractice Guide</p>
+                <p>123 Legal Blvd, Suite 400</p>
+                <p>Los Angeles, CA 90012, USA</p>
+                <p>Phone: 1-800-555-0198</p>
+            </div>
+        <div class="visitor-counter"><p>Total Visitors: <img src="https://hitwebcounter.com/counter/counter.php?page=8000000&style=0006&nbdigits=6&type=page&initCount=1254" title="Visitor Counter" alt="Visitor Counter" border="0" /></p></div>
         </div>
     </footer>
     <div class="cookie-banner" id="cookie-banner">
         <p>We use cookies (including Google AdSense and Analytics) to improve your experience. By continuing, you agree to our <a href="/privacy-policy.html">Privacy Policy</a>.</p>
         <button class="btn" id="accept-cookies">Accept</button>
     </div>
+    <div id="cookieConsent" class="cookie-banner">
+        <div class="cookie-content">
+            We use cookies to analyze site traffic, personalize content, and serve targeted ads via Google AdSense. By continuing to use our site, you consent to our use of cookies. <a href="/privacy-policy.html">Learn More</a>.
+        </div>
+        <button id="acceptCookies" class="btn">Accept</button>
+    </div>
+    <div id="searchModal" class="search-modal">
+        <div class="search-container">
+            <span class="close-search" onclick="document.getElementById('searchModal').classList.remove('active')">&times;</span>
+            <input type="text" id="searchInput" placeholder="Search articles...">
+            <div id="searchResults"></div>
+        </div>
+    </div>
+    <script>
+        if (!localStorage.getItem('cookiesAccepted')) { document.getElementById('cookieConsent').classList.add('show'); }
+        document.getElementById('acceptCookies').addEventListener('click', function() {
+            localStorage.setItem('cookiesAccepted', 'true');
+            document.getElementById('cookieConsent').classList.remove('show');
+        });
+    </script>
 </body>
 </html>
+
+
 
 
 

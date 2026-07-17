@@ -120,5 +120,27 @@
             <li><a href="/articles/lyft-crash-unnecessary-surgery-malpractice.html">Lyft Crash Unnecessary Surgery Malpractice</a></li>
         </ul>
     </main>
+    <div id="cookieConsent" class="cookie-banner">
+        <div class="cookie-content">
+            We use cookies to analyze site traffic, personalize content, and serve targeted ads via Google AdSense. By continuing to use our site, you consent to our use of cookies. <a href="/privacy-policy.html">Learn More</a>.
+        </div>
+        <button id="acceptCookies" class="btn">Accept</button>
+    </div>
+    <div id="searchModal" class="search-modal">
+        <div class="search-container">
+            <span class="close-search" onclick="document.getElementById('searchModal').classList.remove('active')">&times;</span>
+            <input type="text" id="searchInput" placeholder="Search articles...">
+            <div id="searchResults"></div>
+        </div>
+    </div>
+    <script>
+        if (!localStorage.getItem('cookiesAccepted')) { document.getElementById('cookieConsent').classList.add('show'); }
+        document.getElementById('acceptCookies').addEventListener('click', function() {
+            localStorage.setItem('cookiesAccepted', 'true');
+            document.getElementById('cookieConsent').classList.remove('show');
+        });
+    </script>
 </body>
 </html>
+
+

@@ -445,3 +445,107 @@ footer {
     padding: 3rem 0 2rem;
   }
 }
+
+/* Key Takeaways */
+.key-takeaways {
+  background: var(--bg-alt);
+  border-left: 4px solid var(--accent);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}
+.key-takeaways ul {
+  margin-bottom: 0 !important;
+}
+
+/* Newsletter Opt-in */
+.newsletter-optin {
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  color: white;
+  padding: 2.5rem;
+  border-radius: var(--radius-lg);
+  margin: 3rem 0;
+  text-align: center;
+  box-shadow: var(--shadow-lg);
+}
+.newsletter-optin h3 {
+  color: white;
+  margin-top: 0;
+}
+.newsletter-optin p {
+  color: #cbd5e1;
+}
+.newsletter-optin form {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  justify-content: center;
+}
+.newsletter-optin input {
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid transparent;
+  flex: 1;
+  max-width: 300px;
+}
+.newsletter-optin button {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.newsletter-optin button:hover {
+  background: var(--accent-hover);
+}
+
+/* Search Modal */
+.search-modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(15, 23, 42, 0.8);
+  backdrop-filter: blur(4px);
+  z-index: 1000;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 10vh;
+}
+.search-modal.active {
+  display: flex;
+}
+.search-container {
+  background: white;
+  width: 90%;
+  max-width: 600px;
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  position: relative;
+}
+.search-container input {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.25rem;
+  border: 2px solid var(--border);
+  border-radius: var(--radius-sm);
+  margin-bottom: 1rem;
+}
+.close-search {
+  position: absolute;
+  top: 1rem; right: 1.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--text-light);
+}
+
+/* Visitor Counter */
+.visitor-counter {
+  text-align: center;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  font-size: 0.875rem;
+}
