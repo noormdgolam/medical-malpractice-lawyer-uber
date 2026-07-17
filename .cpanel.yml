@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/bongshai/public_html/medical-malpractice-lawyer-uber
+    - /bin/cp -R * $DEPLOYPATH
